@@ -1,13 +1,25 @@
+//html结构
 <template>
   <div id="app">
     <div id="nav">
+      <!-- router-link:  路由跳转的连接 -->
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+
+      <!-- router-view:  路由渲染的容器 -->
     <router-view/>
   </div>
 </template>
 
+//  js行为
+<script>
+export default {
+
+}
+</script>
+
+// css样式
 <style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
