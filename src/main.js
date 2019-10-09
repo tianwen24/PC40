@@ -6,6 +6,11 @@ import App from './App.vue'
 import router from './router'
 //  导入了 vuex
 import store from './store'
+// 导入 Element-ui
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
 
 //  设置当前项目的模式:  非生产模式(开发模式,还没上线给用户体验)
 Vue.config.productionTip = false
