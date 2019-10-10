@@ -52,17 +52,22 @@ export default {
     }
   },
   methods: {
+    //   用户的登录
     login () {
       //    得到 el- form元素
       //    this.$refs.form 结果是一样的  validate;验证当前表单元素中所欲的规则
       this.$refs['form'].validate(valid => {
         //   判断值  valid 为true 说明验证通过 false 不通过
         if (valid) {
-          console.log('验证通过')
+        //   console.log('验证通过')  将数据提交到服务器
         } else {
 
         }
       })
+    },
+    // 用户的提交
+    submitData () {
+
     }
   }
 }
